@@ -1,0 +1,14 @@
+"C:\CWL\spatial\Feature2Point/OK_Counties/OK_Counties.shp"
+
+docker build -t eforoutan/feature2point:latest .
+
+
+docker run --rm -v C:/CWL/spatial/Feature2Point/OK_Counties:/data eforoutan/feature2point:latest /data/OK_Counties.shp
+
+
+docker push eforoutan/feature2point:latest
+
+wsl
+
+cwltool feature2point.cwl feature2point.yml
+

@@ -1,0 +1,3 @@
+input_file:
+  class: Directory
+  path: OK_Counties
