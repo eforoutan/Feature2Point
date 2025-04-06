@@ -8,7 +8,9 @@ hints:
 
 inputs:
   input_file:
-    type: Directory
+    type:
+      - File
+      - Directory
     inputBinding:
       position: 1
 
